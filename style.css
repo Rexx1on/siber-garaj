@@ -1,0 +1,13 @@
+:root{color-scheme:dark;--gold:#ffc107;--ink:#090b10;--panel:#11151c}
+body{min-height:100vh;background:radial-gradient(ellipse at 50% 0,#17202c 0,#0d1118 48rem,#090b10 100%);color:#f8f9fa}
+.navbar-brand{letter-spacing:.04em}.nav-link{color:#d4d7dc}.nav-link:hover,.nav-link.active{color:var(--gold)}
+.coupon-box{display:none;background:#252c36;color:#fff}
+.slider-kutu{min-height:390px;background-position:center;background-size:cover;padding:2rem}
+.slider-1{background-image:linear-gradient(#090b1077,#090b1077),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85')}
+.slider-2{background-image:linear-gradient(#090b1077,#090b1077),url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1800&q=85')}
+.hero-copy{background:#050608c9;border:1px solid #ffc107}.fleet-heading{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.search-input{max-width:260px}
+.vehicle-card{height:100%;background:linear-gradient(155deg,#171d26,#0d1016);border:1px solid #303844;transition:transform .2s,border-color .2s,box-shadow .2s}.vehicle-card:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 12px 30px #0008}
+.vehicle-image-wrap{height:210px;position:relative;background:#0a0d12}.vehicle-image-wrap img{width:100%;height:100%;object-fit:cover}.price-badge{position:absolute;right:.75rem;top:.75rem}.modal-image{max-height:240px;width:100%;object-fit:cover}
+.card{border-radius:1rem}.table{--bs-table-bg:#10241b;--bs-table-color:#f8f9fa}.table thead{--bs-table-bg:#ffc107;--bs-table-color:#151515}
+.accordion-item{border-color:#343a40}.accordion-button:not(.collapsed){box-shadow:none}.form-control,.form-select{background-color:#141922;color:#f8f9fa;border-color:#424a55}.form-control:focus,.form-select:focus{background-color:#141922;color:#fff;border-color:#ffc107;box-shadow:0 0 0 .2rem #ffc10730}
+@media(max-width:767px){.slider-kutu{min-height:300px}.fleet-heading{align-items:stretch}.fleet-heading h2{width:100%}.search-input{max-width:none;width:100%}.fleet-heading>div{width:100%}.fleet-heading>div .btn{flex:1}}

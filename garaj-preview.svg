@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">SiberGaraj lüks araç kiralama</title>
+  <desc id="desc">Gece ışıkları altında altın renkli spor otomobil ve motosiklet</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111b2a"/><stop offset=".58" stop-color="#090e17"/><stop offset="1" stop-color="#17120a"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#fff0a5"/><stop offset=".28" stop-color="#f8c542"/><stop offset=".7" stop-color="#c98512"/><stop offset="1" stop-color="#ffe27b"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#38506a"/><stop offset="1" stop-color="#101925"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#181d24"/><stop offset="1" stop-color="#06080c"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#e7a91c" stop-opacity=".25"/><stop offset="1" stop-color="#e7a91c" stop-opacity="0"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#wall)"/>
+  <ellipse cx="690" cy="235" rx="370" ry="280" fill="url(#halo)"/>
+  <path d="M0 0h960v14H0z" fill="#ffc83d" opacity=".8"/>
+  <path d="M0 344h960v196H0z" fill="url(#floor)"/>
+  <path d="M0 344h960" stroke="#e6b039" stroke-opacity=".45"/>
+  <path d="M0 410h960M0 470h960" stroke="#c8a45d" stroke-opacity=".08"/>
+  <path d="M120 345 285 540M790 345 645 540" stroke="#dcae43" stroke-opacity=".08" stroke-width="2"/>
+  <g opacity=".55"><path d="M88 58h230" stroke="#496074" stroke-width="2"/><path d="M82 64h180" stroke="#ffc83d" stroke-width="3"/><circle cx="820" cy="76" r="4" fill="#eaf4ff"/><circle cx="845" cy="76" r="4" fill="#eaf4ff"/><path d="M813 88h70" stroke="#8096aa"/></g>
+  <text x="64" y="95" fill="#ffc83d" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="6">VIP ARAÇ KİRALAMA</text>
+  <text x="61" y="151" fill="#f8fafc" font-family="Arial,sans-serif" font-size="47" font-weight="800" letter-spacing="1">SİBER<tspan fill="#ffc83d">GARAJ</tspan></text>
+  <text x="65" y="181" fill="#aab5c2" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">GÜCÜ HİSSET · YOLU SEÇ</text>
+  <ellipse cx="400" cy="425" rx="286" ry="35" fill="#f1b832" opacity=".17" filter="url(#glow)"/>
+  <!-- Luxury sports car -->
+  <g transform="translate(0 8)">
+    <path d="M104 374 126 341q14-21 47-31l88-28 56-54q18-17 49-19l122-5q38 0 61 23l59 56 68 16q29 7 42 30l18 32q11 4 11 19v16H88v-15q0-10 16-11Z" fill="url(#gold)" stroke="#fff0b2" stroke-width="3"/>
+    <path d="m286 276 49-43q12-11 34-12l111-4q23 0 40 17l43 44Z" fill="url(#glass)" stroke="#fff1b7" stroke-width="3"/>
+    <path d="m411 220 1 57M524 235l38 42" stroke="#c5d4e2" stroke-opacity=".7" stroke-width="3"/>
+    <path d="M98 367h47M704 366h42" stroke="#fff6d0" stroke-width="7" stroke-linecap="round"/>
+    <path d="M114 386h73M672 386h73" stroke="#e94538" stroke-width="5" stroke-linecap="round"/>
+    <path d="M254 376h344" stroke="#82520c" stroke-opacity=".6" stroke-width="3"/>
+    <circle cx="242" cy="389" r="39" fill="#080b10" stroke="#c9d0d8" stroke-width="6"/><circle cx="242" cy="389" r="20" fill="#27313b" stroke="#ffc83d" stroke-width="4"/><circle cx="242" cy="389" r="7" fill="#dce2e8"/>
+    <circle cx="630" cy="389" r="39" fill="#080b10" stroke="#c9d0d8" stroke-width="6"/><circle cx="630" cy="389" r="20" fill="#27313b" stroke="#ffc83d" stroke-width="4"/><circle cx="630" cy="389" r="7" fill="#dce2e8"/>
+  </g>
+  <!-- Sport motorcycle -->
+  <g transform="translate(0 10)" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="798" cy="395" r="30" fill="#080b10" stroke="#d5dbe0" stroke-width="5"/><circle cx="798" cy="395" r="13" fill="#303b45" stroke="#ffc83d" stroke-width="3"/>
+    <circle cx="907" cy="395" r="30" fill="#080b10" stroke="#d5dbe0" stroke-width="5"/><circle cx="907" cy="395" r="13" fill="#303b45" stroke="#ffc83d" stroke-width="3"/>
+    <path d="m798 390 34-47 39 2 36 49-50-9-24-36-25 39Z" fill="none" stroke="url(#gold)" stroke-width="10"/>
+    <path d="m833 343 18-25 29 3 15 20-24 8-24-3Z" fill="url(#gold)" stroke="#fff0a5" stroke-width="3"/>
+    <path d="m868 320 16-16 24 5 11 16-18 5-18-5" fill="none" stroke="#dce4ed" stroke-width="6"/>
+    <path d="m892 326 19 5M836 343l-17-17M823 326h-16" fill="none" stroke="#c8d6e2" stroke-width="5"/>
+    <path d="m854 352 23 37M866 352l-23 38" stroke="#939eaa" stroke-width="5"/>
+  </g>
+  <text x="65" y="500" fill="#c3ccd7" font-family="Arial,sans-serif" font-size="17" letter-spacing="1">OTOMOBİL  ·  MOTOSİKLET  ·  REZERVASYON</text>
+  <path d="M65 516h360" stroke="#ffc83d" stroke-width="2" opacity=".75"/>
+</svg>

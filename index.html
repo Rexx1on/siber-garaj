@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SiberGaraj | VIP Araç Kiralama</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-warning sticky-top">
+    <div class="container"><a class="navbar-brand fw-bold text-warning fs-3" href="index.html"><i class="fa-solid fa-rocket"></i> SİBER<span class="text-white">GARAJ</span></a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#anaMenu" aria-label="Menüyü aç"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="anaMenu"><ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fa-solid fa-store"></i> Araç Vitrini</a></li>
+        <li class="nav-item"><a class="nav-link" href="rezervasyon.html"><i class="fa-solid fa-file-contract"></i> Şartlar & Onay</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn btn-warning fw-bold" href="garajim.html"><i class="fa-solid fa-warehouse"></i> Garajım <span id="garajSayaci" class="badge bg-danger">0</span></a></li>
+      </ul></div>
+    </div>
+  </nav>
+  <div class="bg-warning text-dark text-center py-2 fw-bold">🔥 Hafta sonuna özel spor araçlarda indirim! <button id="kampanyaBtn" class="btn btn-sm btn-dark ms-2">Kupon kodunu gör</button></div>
+  <div id="kuponKutusu" class="coupon-box text-center py-3"><h4>🎁 İndirim kodunuz: <span class="badge bg-warning text-dark">VIPGARAJ20</span></h4><p class="mb-0">Garajınızda %20 indirim için kodu kullanın.</p></div>
+  <div id="vitrinSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><div class="slider-kutu slider-1 d-flex align-items-center justify-content-center"><div class="hero-copy text-center p-4 rounded"><h1 class="display-4 fw-bold text-warning">Hayalindeki aracı sür</h1><p class="lead mb-0">Süper spor otomobiller ve yarış motosikletleri, tek tıkla garajında.</p></div></div></div>
+      <div class="carousel-item"><div class="slider-kutu slider-2 d-flex align-items-center justify-content-center"><div class="hero-copy text-center p-4 rounded"><h2 class="display-4 fw-bold text-info">Özgürlüğü iki tekerde yaşa</h2><p class="lead mb-0">Yol seni çağırıyor. Bir sonraki maceranı seç.</p></div></div></div>
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#vitrinSlider" data-bs-slide="prev" aria-label="Önceki"><span class="carousel-control-prev-icon"></span></button><button class="carousel-control-next" data-bs-target="#vitrinSlider" data-bs-slide="next" aria-label="Sonraki"><span class="carousel-control-next-icon"></span></button>
+  </div>
+  <main class="container-fluid my-5 px-3 px-lg-5">
+    <div class="fleet-heading mb-4 pb-3 border-bottom border-secondary">
+      <h2 class="mb-0"><i class="fa-solid fa-fire text-warning"></i> Filomuzdaki Araçlar</h2>
+      <input id="aracAra" class="form-control search-input" type="search" placeholder="Model ara..." onkeyup="aramaYap()" aria-label="Araç modeli ara">
+      <div class="d-flex gap-2"><button onclick="araclariGetir('vehicle')" class="btn btn-outline-warning"><i class="fa-solid fa-car"></i> Otomobiller</button><button onclick="araclariGetir('motorcycle')" class="btn btn-outline-info"><i class="fa-solid fa-motorcycle"></i> Motosikletler</button></div>
+    </div>
+    <div id="apiDurum" class="small text-secondary mb-3" role="status"></div>
+    <div id="arac-listesi" class="row g-4"></div>
+  </main>
+  <div class="modal fade" id="aracDetayModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content bg-dark text-light border-warning">
+    <div class="modal-header border-secondary"><h5 class="modal-title text-warning" id="modalBaslik">Araç</h5><button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+    <div class="modal-body text-center"><img id="modalResim" class="img-fluid rounded mb-3 modal-image" alt=""><p id="modalAciklama" class="text-secondary"></p><div class="d-flex justify-content-around gap-2 bg-black p-3 rounded"><span>Marka<br><strong id="modalMarka" class="text-info"></strong></span><span>Puan<br>⭐ <strong id="modalPuan"></strong></span><span>Günlük<br><strong id="modalFiyat" class="text-success"></strong></span></div></div>
+    <div class="modal-footer border-secondary"><button class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button><button id="modalKiralaBtn" class="btn btn-warning fw-bold"><i class="fa-solid fa-key"></i> Garajıma ekle</button></div>
+  </div></div></div>
+  <footer class="bg-black text-center py-4 text-secondary border-top border-secondary"><p class="mb-0">© 2026 SiberGaraj · Bootstrap 5 ve jQuery ile hazırlandı</p></footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="app.js"></script>
+</body>
+</html>
